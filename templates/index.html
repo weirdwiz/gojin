@@ -1,0 +1,8 @@
+{{ template "header.html" .}}
+
+{{range .payload}}
+<h2>{{.Title}}</h2>
+<p>{{ .Description }}</p>
+{{end}}
+
+{{template "footer.html" .}}
